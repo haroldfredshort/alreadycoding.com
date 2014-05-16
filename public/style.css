@@ -1,6 +1,10 @@
 * {
 	font-family: 'Source Code Pro';
-	background-color:
-	#000000; color: #cccccc;
+	color: #cccccc;
+}
+
+body {
+	background-color: #cccccc;
+	color: #123456;
 }
 
