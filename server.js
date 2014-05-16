@@ -7,7 +7,7 @@ app.use(compress());
 
 app.all(/.*/, function(req, res, next) {
 	var host = req.header("host");
-	if (host.match(/^www\..*/i)) {
+	if (host.match(/^www\..*/)) {
 		res.redirect(301, req.protocol + '://alreadycoding.com');
 		res.end();
 	} else {
