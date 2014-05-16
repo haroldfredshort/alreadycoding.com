@@ -5,9 +5,9 @@ var app = express();
 
 app.use(compress());
 
-app.all(/.*/, function(req, res, next) {
+app.get('*', function(req, res, next) {
 	if (req.headers.host.match(/^www\./) !== null) {
-		res.redirect(301, req.protocol + '://' + req.headers.host.replace(/^www\./, '') + req.url);
+		res.redirect(req.protocol + '://' + req.headers.host.replace(/^www\./, '') + req.url, 301);
 	} else {
 		next();
 	}
