@@ -6,10 +6,8 @@ var app = express();
 app.use(compress());
 
 app.all(/.*/, function(req, res, next) {
-	var host = req.header("host");
-	if (host.match(/^www\..*/)) {
-		res.redirect(301, req.protocol + '://alreadycoding.com');
-		res.end();
+	if (req.headers.host.match(/^www\./) !== null) {
+		res.redirect(301, req.protocol + '://' + req.headers.host.replace(/^www\./, '') + req.url);
 	} else {
 		next();
 	}
