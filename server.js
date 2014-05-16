@@ -4,7 +4,7 @@ var compress = require('compression');
 var app = express();
 app.use(compress());
 
-app.get('/*', function(req, res, next) {
+app.get('*', function(req, res, next) {
 	if (req.headers.host.match(/^www\./) !== null) {
 		res.redirect(req.protocol + '://' + req.headers.host.replace(/^www\./, '') + req.url, 301);
 		res.end();
