@@ -13,9 +13,7 @@ app.get('/*', function(req, res, next) {
 	}
 });
 
-app.get('/*', function(req, res, next) {
-	app.use(express.static(__dirname + '/public'));
-});
+app.use(express.static(__dirname + '/public'));
 
 var port = process.env.PORT || 1337;
 app.listen(port);
