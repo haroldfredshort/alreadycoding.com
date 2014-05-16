@@ -1,0 +1,10 @@
+{
+  "name": "already-coding",
+  "description": "Already Coding",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "express": "4.2",
+	"compression": "1.0.2"
+  }
+}
