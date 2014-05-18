@@ -1,13 +1,14 @@
 {
-	"name": "already-coding",
-	"description": "Already Coding",
-	"version": "0.0.2",
-	"private": true,
-	"engines": {
-		"node": "0.10.x"
-	},
-	"dependencies": {
-		"express": "4.2",
-		"compression": "1.0.2"
-	}
+  "name": "already-coding",
+  "description": "Already Coding",
+  "version": "0.0.2",
+  "private": true,
+  "engines": {
+    "node": "0.10.x"
+  },
+  "dependencies": {
+    "express": "4.2",
+    "compression": "1.0.2",
+    "bootstrap": "0.0.2"
+  }
 }
