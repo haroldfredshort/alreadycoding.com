@@ -20,7 +20,6 @@
     <Content Include="web.config" />
     <None Include="Web.Debug.config" />
     <None Include="alreadycoding.pubxml" />
-    <Content Include="bower.json" />
     <Content Include="package.json" />
     <Compile Include="server.js" />
     <Content Include="public\bootstrap.html" />
