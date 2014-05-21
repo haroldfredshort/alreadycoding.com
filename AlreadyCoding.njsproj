@@ -24,6 +24,8 @@
     <None Include="Web.Debug.config" />
     <None Include="alreadycoding.pubxml" />
     <Content Include="package.json" />
+    <Compile Include="public\js\angular-route.min.js" />
+    <Compile Include="public\js\angular.min.js" />
     <Compile Include="public\js\app.js" />
     <Compile Include="server.js" />
     <Content Include="public\bootstrap.html" />
