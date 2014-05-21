@@ -2,11 +2,14 @@
 <html lang="en-US">
 <head>
     <meta charset="utf-8">
-    <link href='http://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
-    <link href='/style.css' rel='stylesheet' type='text/css'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Harold Short is Already Coding">
     <meta name="author" content="Harold Short">
     <title>Already Coding</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href='http://fonts.googleapis.com/css?family=Varela:400,700' rel='stylesheet' type='text/css'>
+    <link href='style.css' rel='stylesheet' type='text/css'>
     <script>
         (function (i, s, o, g, r, a, m) {
             i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
@@ -14,24 +17,22 @@
             }, i[r].l = 1 * new Date(); a = s.createElement(o),
             m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
         })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
-
         ga('create', 'UA-3916559-13', 'alreadycoding.com');
         ga('send', 'pageview');
-
     </script>
 </head>
-<body style='margin: 0; height: 90vh;'>
-    <header style='position: fixed; top: 0; width: 100%; display: block; background-color: #333333; line-height:48px;'>
-        <h2 style='text-align:left; margin: 0 0 0 48px; float: left;'>Already Coding</h2>
-        <h3 style='text-align:right; margin: 0 48px 0 0; width: 200px; float: right;'><a>One</a> <a>Two</a> <a>Three</a> <a>?</a></h3>
+<body>
+    <header>
+        <div id="title">Already Coding</div>
+        <div id="nav"><a>one</a> <a>two</a> <a>three</a> <a>?</a></div>
     </header>
-    <div style='width: 100%; height: 100%;'>
-        <p style='position: relative; top: 50%; -moz-transform: translateY(-50%); -ms-transform: translateY(-50%); -o-transform: translateY(-50%); -webkit-transform: translateY(-50%); transform: translateY(-50%); text-align: center; color: #333333;'>
-            Content goes here.
-        </p>
+    <div id="body">
+        <section style="background: #808080 url('banner.jpg') no-repeat center bottom; height: 400px;">
+            <p>Add content here!</p>
+        </section>
     </div>
-    <footer style='position: fixed; bottom: 0; width: 100%; display: block; background-color: #333333; line-height:48px;'>
-        <h4 style='text-align:center; margin: 0;'>&copy; Copyright 2014 Harold Short</h4>
+    <footer>
+        <div>&copy; Copyright 2014 Harold Short</div>
     </footer>
 </body>
 </html>

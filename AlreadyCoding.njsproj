@@ -17,10 +17,14 @@
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
   <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
   <ItemGroup>
+    <Content Include="public\favicon.ico">
+      <Publish>False</Publish>
+    </Content>
     <Content Include="web.config" />
     <None Include="Web.Debug.config" />
     <None Include="alreadycoding.pubxml" />
     <Content Include="package.json" />
+    <Compile Include="public\js\app.js" />
     <Compile Include="server.js" />
     <Content Include="public\bootstrap.html" />
     <Content Include="public\googlea0655a9d0b135d89.html" />
