@@ -27,7 +27,7 @@
     </script>
 </head>
 
-<body ng-app>
+<body ng-app="ngApp">
 
     <div class="blog-masthead">
         <div class="container">
@@ -123,20 +123,8 @@
                     <h4>About</h4>
                     <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
                 </div>
-                <div ng-controller="SidebarModule" class="sidebar-module">
-                    <h4>{{title}}</h4>
-                    <ol class="list-unstyled">
-                        <li ng-repeat="item in items"><a href="{{item.url}}">{{item.value}}</a></li>
-                    </ol>
-                </div>
-                <div class="sidebar-module">
-                    <h4>Elsewhere</h4>
-                    <ol class="list-unstyled">
-                        <li><a href="#">GitHub</a></li>
-                        <li><a href="#">Twitter</a></li>
-                        <li><a href="#">Facebook</a></li>
-                    </ol>
-                </div>
+                <sidebar-module ng-controller='SidebarHelloController'></sidebar-module>
+                <sidebar-module ng-controller='SidebarElsewhereController'></sidebar-module>
             </div><!-- /.blog-sidebar -->
 
         </div><!-- /.row -->
@@ -156,5 +144,6 @@
     <script src="js/docs.min.js"></script>
     <script src="js/angular.min.js"></script>
     <script src="js/angular-route.min.js"></script>
+    <script src="js/modules/SidebarModule.js"></script>
 </body>
 </html>
