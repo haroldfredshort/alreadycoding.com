@@ -27,6 +27,7 @@
     <Compile Include="public\js\angular-route.min.js" />
     <Compile Include="public\js\angular.min.js" />
     <Compile Include="public\js\app.js" />
+    <Compile Include="public\js\modules\SidebarModule.js" />
     <Compile Include="server.js" />
     <Content Include="public\bootstrap.html" />
     <Content Include="public\googlea0655a9d0b135d89.html" />
@@ -83,6 +84,7 @@
     <Folder Include="public\css" />
     <Folder Include="public\fonts" />
     <Folder Include="public\js" />
+    <Folder Include="public\js\modules\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsTools.targets" />
