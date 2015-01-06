@@ -21,10 +21,9 @@ header {
 }
 
 #title {
-    text-align: left;
+    text-align: center;
 	text-transform: uppercase;
-    margin: 0 0 0 48px;
-    float: left;
+    margin: 0 0 0 0px;
     font-weight: 700;
     font-size: 100%;
 }
@@ -58,7 +57,7 @@ footer div {
 }
 
 #body p {
-    padding-top: 320px;
+    padding-top: 0px;
     text-align: center;
     color: white;
     font-weight: 700;
